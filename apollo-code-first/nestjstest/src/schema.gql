@@ -1,0 +1,32 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type UserInfo {
+  id: Int!
+  userId: Int!
+  phone: String
+  home: String
+  gender: String
+}
+
+type User {
+  id: Int!
+  username: String!
+  password: String
+  userInfo: UserInfo!
+}
+
+type ResponseMessage {
+  res: String!
+  message: String!
+  user: User
+}
+
+type Query {
+  login(username: String!, password: String!, code: String!): ResponseMessage!
+}
+
+type Mutation {
+  register(username: String!, password: String!, confirmPassword: String!): ResponseMessage!
+}

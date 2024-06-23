@@ -1,0 +1,33 @@
+.clearfix::before,.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+.main-top-box-span{
+    float: right;
+    font-size: 14px;
+    line-height: 28px;
+    color: #666666;
+    cursor: pointer;
+}
+
+.main-top{
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    display: flex;
+}
+.main-top-box{
+    
+    height: 28px;
+    width: 108px;
+    line-height: 28px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 700;
+    color: #105fa5;
+    background-color: #BEDCF6;
+    border-radius: 15px 15px 0px 0px;
+}

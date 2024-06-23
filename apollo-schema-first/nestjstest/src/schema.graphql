@@ -1,0 +1,29 @@
+type Query {
+  login(username: String!,password: String!,code: String!):ResponseMessage!
+}
+
+type Mutation {
+  register(username: String!, password: String!,confirmPassword: String!):ResponseMessage!
+}
+
+type User {
+  id: Int!
+  username: String!
+  password: String
+  userInfo: [UserInfo]
+}
+
+type UserInfo {
+  id: Int!
+  userId: Int!
+  phone: String
+  home: String
+  gender: String
+  user: User!
+}
+
+type ResponseMessage {
+  res: String
+  message: String
+  user: User
+}
